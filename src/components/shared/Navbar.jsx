@@ -5,15 +5,15 @@ const Navbar = () => {
     const links = (
         <>
             <li>
-                <Link href="/" className="active:bg-blue-400 active:text-white">Home</Link>
+                <Link href="/">Home</Link>
             </li>
 
             <li>
-                <Link href="/products" className="active:bg-blue-400 active:text-white">Products</Link>
+                <Link href="/products">Products</Link>
             </li>
 
             <li>
-                <Link href="/my-profile" className="active:bg-blue-400 active:text-white">My Profile</Link>
+                <Link href="/my-profile">My Profile</Link>
             </li>
         </>
     )
@@ -32,7 +32,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="font-bold text-2xl text-blue-400">SunEssentials</a>
+                    <a className="font-bold text-2xl text-blue-500">SunEssentials</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-medium text-neutral-700">
@@ -41,7 +41,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <Link 
-                        className="btn bg-blue-400 text-white" 
+                        className="btn bg-black text-white" 
                         href="/login"
                     >
                         <FaUserCircle />

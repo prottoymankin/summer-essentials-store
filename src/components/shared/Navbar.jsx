@@ -5,15 +5,15 @@ const Navbar = () => {
     const links = (
         <>
             <li>
-                <Link href="/home">Home</Link>
+                <Link href="/" className="active:bg-blue-400 active:text-white">Home</Link>
             </li>
 
             <li>
-                <Link href="/products">Products</Link>
+                <Link href="/products" className="active:bg-blue-400 active:text-white">Products</Link>
             </li>
 
             <li>
-                <Link href="/my-profile">My Profile</Link>
+                <Link href="/my-profile" className="active:bg-blue-400 active:text-white">My Profile</Link>
             </li>
         </>
     )

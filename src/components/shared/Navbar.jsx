@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link"
 import { FaUserCircle } from "react-icons/fa";
 
@@ -32,7 +33,15 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="font-bold text-2xl text-blue-500">SunEssentials</a>
+                    <div className="flex items-center gap-1">
+                        <Image 
+                            width={35} 
+                            height={35} 
+                            src="/logo.png" 
+                            alt="logo">
+                        </Image>
+                        <a className="font-bold text-2xl">SunEssentials</a>
+                    </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-medium text-neutral-700">

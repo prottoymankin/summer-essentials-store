@@ -1,3 +1,4 @@
+import Navbar from "@/components/shared/Navbar";
 import "./globals.css";
 
 export const metadata = {
@@ -12,7 +13,12 @@ export default function RootLayout({ children }) {
       className={`h-full antialiased`}
       data-theme="light"
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

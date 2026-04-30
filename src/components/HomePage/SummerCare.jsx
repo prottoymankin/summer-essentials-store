@@ -27,9 +27,11 @@ const SummerCare = () => {
           tips.map((tip, index) => (
             <div
               key={index}
-              className="card shadow-sm"
+              className="h-50 rounded-2xl shadow-lg transition duration-300 hover:-translate-y-2"
             >
-              <div className="card-body items-center text-center">
+              <div 
+                className="rounded-2xl flex flex-col h-full items-center text-center justify-center"
+              >
                 <h2 className="card-title">{tip.title}</h2>
                 <p>{tip.desc}</p>
               </div>

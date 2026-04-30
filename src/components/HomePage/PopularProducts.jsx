@@ -7,8 +7,8 @@ const PopularProducts = () => {
   const {products, isLoading} = useProducts();
 
   return (
-    <section className="space-y-6 mb-10">
-      <div className="text-neutral-800 text-center space-y-2">
+    <section className="space-y-6 mb-15">
+      <div className="text-neutral-800 text-center">
         <h2 className="font-bold text-3xl">Populer Products</h2>
         <p>Our most loved summer picks, chosen by customers.</p>
       </div>

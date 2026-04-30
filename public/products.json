@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for bright sunny days.",
+    "image": "https://i.postimg.cc/example1.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Beach Flip Flops",
+    "brand": "WalkEasy",
+    "price": 10,
+    "rating": 4.3,
+    "stock": 25,
+    "description": "Lightweight flip flops ideal for beach and summer walks.",
+    "image": "https://i.postimg.cc/example2.png",
+    "category": "Footwear"
+  },
+  {
+    "id": 3,
+    "name": "Straw Summer Hat",
+    "brand": "CoolBreeze",
+    "price": 12,
+    "rating": 4.5,
+    "stock": 18,
+    "description": "Wide-brim hat to protect from harsh sunlight.",
+    "image": "https://i.postimg.cc/example3.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 4,
+    "name": "Cotton Tank Top",
+    "brand": "SoftWear",
+    "price": 9,
+    "rating": 4.4,
+    "stock": 30,
+    "description": "Breathable sleeveless tank top for hot summer days.",
+    "image": "https://i.postimg.cc/example4.png",
+    "category": "Clothing"
+  },
+  {
+    "id": 5,
+    "name": "Linen Shorts",
+    "brand": "UrbanFit",
+    "price": 14,
+    "rating": 4.6,
+    "stock": 20,
+    "description": "Cool and airy linen shorts for maximum comfort.",
+    "image": "https://i.postimg.cc/example5.png",
+    "category": "Clothing"
+  },
+  {
+    "id": 6,
+    "name": "Insulated Water Bottle",
+    "brand": "HydroMax",
+    "price": 11,
+    "rating": 4.8,
+    "stock": 40,
+    "description": "Keeps your drinks cold for hours in summer heat.",
+    "image": "https://i.postimg.cc/example6.png",
+    "category": "Essentials"
+  },
+  {
+    "id": 7,
+    "name": "Sunscreen SPF 50+",
+    "brand": "SkinGuard",
+    "price": 13,
+    "rating": 4.9,
+    "stock": 15,
+    "description": "Strong sun protection against harmful UV rays.",
+    "image": "https://i.postimg.cc/example7.png",
+    "category": "Skincare"
+  },
+  {
+    "id": 8,
+    "name": "Beach Tote Bag",
+    "brand": "PackPro",
+    "price": 18,
+    "rating": 4.5,
+    "stock": 12,
+    "description": "Spacious tote bag to carry all your beach essentials.",
+    "image": "https://i.postimg.cc/example8.png",
+    "category": "Bags"
+  },
+  {
+    "id": 9,
+    "name": "Portable Hand Fan",
+    "brand": "CoolAir",
+    "price": 12,
+    "rating": 4.4,
+    "stock": 22,
+    "description": "Rechargeable mini fan for instant cooling anywhere.",
+    "image": "https://i.postimg.cc/example9.png",
+    "category": "Electronics"
+  },
+  {
+    "id": 10,
+    "name": "Swimming Shorts",
+    "brand": "AquaFit",
+    "price": 16,
+    "rating": 4.3,
+    "stock": 28,
+    "description": "Quick-dry shorts perfect for swimming and beach fun.",
+    "image": "https://i.postimg.cc/example10.png",
+    "category": "Clothing"
+  },
+  {
+    "id": 11,
+    "name": "Cooling Face Mist",
+    "brand": "FreshGlow",
+    "price": 10,
+    "rating": 4.6,
+    "stock": 14,
+    "description": "Instant refreshing mist to cool your skin in heat.",
+    "image": "https://i.postimg.cc/example11.png",
+    "category": "Skincare"
+  },
+  {
+    "id": 12,
+    "name": "Lightweight Summer Sneakers",
+    "brand": "StepUp",
+    "price": 22,
+    "rating": 4.7,
+    "stock": 16,
+    "description": "Breathable sneakers designed for summer comfort.",
+    "image": "https://i.postimg.cc/example12.png",
+    "category": "Footwear"
+  }
+]

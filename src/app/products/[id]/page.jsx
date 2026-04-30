@@ -1,8 +1,56 @@
-const ProductDetailsPage = () => {
+import Image from "next/image";
+
+const ProductDetailsPage = async ({ params }) => {
+  const { id } = await params;
+  
+  const response = await fetch("https://summer-essentials-store-red.vercel.app/products.json");
+  const data = await response.json();
+  const selectedProduct = data.find(p => p.id === parseInt(id));
+
   return (
-    <div>
-      This is product details page
-    </div>
+    <section className="max-w-7xl mx-auto my-10 text-neutral-800">
+      <div className="flex gap-6">
+        <div className="min-h-[60vh] relative w-1/2 rounded-2xl overflow-hidden">
+          <Image src={selectedProduct.image} alt={selectedProduct.name} fill className="object-cover w-full h-full" />
+        </div>
+
+        <div className="w-1/2 space-y-4">
+          <div>
+            <h2 className="font-bold text-3xl">{selectedProduct.name}</h2>
+            <p>
+              <span className="font-semibold">Brand: </span>
+              <span>{selectedProduct.brand}</span>
+            </p>
+          </div>
+
+          <p>⭐{selectedProduct.rating}</p>
+
+          <p>
+            <span className="font-semibold">Description: </span>
+            <span>{selectedProduct.description}</span>
+          </p>
+
+          <div>
+            {
+              selectedProduct.stock > 0 ? (
+                <p>
+                  <span className="text-green-600">In stock </span>
+                  <span>(Only {selectedProduct.stock} left)</span>
+                </p>
+              ) : (
+                <span className="text-red-600">
+                  Out of stock
+                </span>
+              )
+            }
+          </div>
+
+          <p className="font-semibold text-3xl text-green-600">
+            ${selectedProduct.price}
+          </p>
+        </div>
+      </div>
+    </section>
   )
 }
 

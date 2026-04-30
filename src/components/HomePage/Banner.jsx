@@ -8,7 +8,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Banner = () => {
   return (
     <section 
-      className=" bg-linear-to-r from-[#FFF7CC] to-[#FFE8A3] min-h-[60vh] flex flex-col lg:flex-row gap-5 items-center justify-around max-w-7xl mx-auto my-10 p-6 rounded-2xl"
+      className=" bg-linear-to-r from-[#FFF7CC] to-[#FFE8A3] min-h-[60vh] flex flex-col lg:flex-row gap-5 items-center justify-around my-10 p-6 rounded-2xl text-neutral-800"
     >
       <div className="flex flex-col gap-6 items-center lg:items-start">
         <div className="space-y-2">

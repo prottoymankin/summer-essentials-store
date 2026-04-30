@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link"
-import { FaUserCircle } from "react-icons/fa";
 
 const Navbar = () => {
     const links = (
@@ -48,13 +47,19 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end space-x-2">
                     <Link 
                         className="btn bg-black text-white" 
                         href="/login"
                     >
-                        <FaUserCircle />
                         Login
+                    </Link>
+
+                    <Link 
+                        className="btn bg-green-600 text-white"
+                        href="/signup"
+                    >
+                        Signup
                     </Link>
                 </div>
             </div>

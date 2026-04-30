@@ -1,7 +1,7 @@
 const LoginPage = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col items-center justify-center">
-        <h2 className="mb-10 font-bold text-3xl">Please Login</h2>
+    <section className="min-h-[80vh] flex flex-col items-center justify-center space-y-10">
+        <h2 className="font-bold text-3xl">Please Login</h2>
 
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
             <form className="card-body">

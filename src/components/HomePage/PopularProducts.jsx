@@ -1,10 +1,8 @@
-"use client"
-
-import useProducts from "@/hooks/useProducts";
 import ProductCard from "../shared/ProductCard";
 
-const PopularProducts = () => {
-  const {products, isLoading} = useProducts();
+const PopularProducts = async () => {
+  const response = await fetch("https://summer-essentials-store-red.vercel.app/products.json");
+  const products = await response.json();
 
   return (
     <section className="space-y-6 mb-15">

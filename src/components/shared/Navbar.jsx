@@ -1,7 +1,17 @@
+"use client"
+
+import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import Link from "next/link"
+import { FaSignOutAlt } from "react-icons/fa";
 
 const Navbar = () => {
+    const userData = authClient.useSession();
+    const user = userData.data?.user
+    
+    const handleSignOut = async () => {
+        await authClient.signOut();
+    }
 
     const links = (
         <>
@@ -48,21 +58,49 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end space-x-2">
-                    <Link 
-                        className="btn bg-black text-white" 
-                        href="/login"
-                    >
-                        Login
-                    </Link>
 
-                    <Link 
-                        className="btn bg-green-600 text-white"
-                        href="/signup"
-                    >
-                        Signup
-                    </Link>
-                </div>
+                { !user && (
+                    <div className="navbar-end space-x-2">
+                        <Link 
+                            className="btn bg-black text-white" 
+                            href="/login"
+                        >
+                            Login
+                        </Link>
+
+                        <Link 
+                            className="btn bg-green-600 text-white"
+                            href="/signup"
+                        >
+                            Signup
+                        </Link>
+                    </div>
+                )}
+
+                {
+                    user && (
+                        <div className="navbar-end space-x-2">
+                            <div className="relative h-10 w-10 rounded-full overflow-hidden">
+                                <Image 
+                                    src={user?.image}
+                                    alt={user?.name}
+                                    referrerPolicy="no-referrer"
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+
+                            <button 
+                                onClick={handleSignOut}
+                                className="btn bg-orange-500 text-white"
+                            >
+                                <FaSignOutAlt />
+                                Sign out
+                            </button>
+                        </div>
+                    )
+                }
+                
             </div>
         </div>
     )

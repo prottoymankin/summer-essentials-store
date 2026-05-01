@@ -61,7 +61,7 @@ const ProfileEditPage = () => {
             />
             
             <button 
-              className="btn btn-neutral mt-4 rounded-full"
+              className="btn bg-primary mt-4 rounded-full text-white"
               type="submit"
             >
               Update

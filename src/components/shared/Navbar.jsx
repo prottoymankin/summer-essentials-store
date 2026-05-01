@@ -62,14 +62,14 @@ const Navbar = () => {
                 { !user && (
                     <div className="navbar-end space-x-2">
                         <Link 
-                            className="btn bg-black text-white" 
+                            className="bg-amber-400 btn rounded-full text-slate-900" 
                             href="/login"
                         >
                             Login
                         </Link>
 
                         <Link 
-                            className="btn bg-green-600 text-white"
+                            className="bg-orange-600 btn rounded-full text-white"
                             href="/signup"
                         >
                             Signup
@@ -92,7 +92,7 @@ const Navbar = () => {
 
                             <button 
                                 onClick={handleSignOut}
-                                className="btn bg-orange-500 text-white"
+                                className="btn bg-amber-400 text-slate-900"
                             >
                                 <FaSignOutAlt />
                                 Sign out

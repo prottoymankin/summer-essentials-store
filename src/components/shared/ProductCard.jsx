@@ -11,14 +11,19 @@ const ProductCard = ({product}) => {
         <Image src={product.image} alt={product.name} fill className="object-cover" />
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-xl">{product.name}</h2>
+        <h2 className="card-title text-2xl">{product.name}</h2>
 
         <p className="text-sm font-medium">⭐{product.rating}</p>
 
-        <p className="font-medium text-xl">Price: ${product.price}</p>
+        <p className="font-bold text-orange-600 text-xl">Price: ${product.price}</p>
 
         <div className="card-actions justify-end">
-          <Link href={`/products/${product.id}`} className="btn btn-primary">View</Link>
+          <Link 
+            className="bg-amber-400 btn rounded-full text-slate-900"
+            href={`/products/${product.id}`} 
+          >
+            View
+          </Link>
         </div>
       </div>
     </div>

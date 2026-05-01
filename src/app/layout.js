@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       className={`h-full antialiased`}
       data-theme="light"
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-amber-50">
         <Navbar />
         <main>
           {children}

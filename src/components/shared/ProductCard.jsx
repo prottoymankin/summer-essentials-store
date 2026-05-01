@@ -1,21 +1,32 @@
-import star from "../../assets/rating-star.png";
-
 import Image from "next/image";
 import Link from "next/link";
 
 const ProductCard = ({product}) => {
 
   return (
-    <div className="card bg-base-100 shadow-sm overflow-hidden text-neutral-800">
-      <figure className="relative h-75 w-full">
-        <Image src={product.image} alt={product.name} fill className="object-cover" />
+    <div 
+      className="bg-white border border-gray-300 card overflow-hidden rounded-2xl shadow-lg text-slate-800"
+    >
+      <figure className="h-75 relative w-full">
+        <Image 
+          alt={product.name} 
+          className="object-cover" 
+          fill 
+          src={product.image} 
+        />
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-2xl">{product.name}</h2>
+        <h2 className="card-title text-2xl">
+          {product.name}
+        </h2>
 
-        <p className="text-sm font-medium">⭐{product.rating}</p>
+        <p className="font-medium text-sm">
+          ⭐{product.rating}
+        </p>
 
-        <p className="font-bold text-orange-600 text-xl">Price: ${product.price}</p>
+        <p className="font-bold text-orange-600 text-xl">
+          Price: ${product.price}
+        </p>
 
         <div className="card-actions justify-end">
           <Link 

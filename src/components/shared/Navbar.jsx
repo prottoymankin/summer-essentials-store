@@ -3,14 +3,17 @@
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import Link from "next/link"
+import { useRouter } from "next/navigation";
 import { FaSignOutAlt } from "react-icons/fa";
 
 const Navbar = () => {
+    const router = useRouter();
     const userData = authClient.useSession();
     const user = userData.data?.user
     
     const handleSignOut = async () => {
         await authClient.signOut();
+        router.push("/");
     }
 
     const links = (

@@ -1,6 +1,7 @@
 "use client";
 
 import { authClient } from "@/lib/auth-client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const SignUpPage = () => {
@@ -34,63 +35,104 @@ const SignUpPage = () => {
 
   return (
     <section 
-      className="min-h-[80vh] flex flex-col items-center justify-center space-y-10"
+      className="flex flex-col items-center justify-center min-h-[80vh] py-10 space-y-10"
     >
-      <h2 className="text-2xl font-bold text-neutral-800">Welcome! Please Signup</h2>
+      <header className="text-center text-slate-900 space-y-1">
+        <h2 className="font-bold text-3xl">
+          Create an account
+        </h2>
+        
+        <p>
+          <span>Already have an account? </span>
+          <Link
+            className="font-semibold text-blue-600 underline"
+            href="/login"
+          >
+            Login
+          </Link>
+        </p>
+      </header>
       
 
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-          <form className="card-body" onSubmit={onSubmit}>
+      <div 
+        className="bg-white border border-gray-300 card max-w-lg rounded-2xl shadow-2xl w-full"
+      >
+          <form 
+            className="card-body" 
+            onSubmit={onSubmit}
+          >
             <fieldset className="fieldset">
-              <label className="label text-black">Name</label>
+              <label 
+                className="font-semibold label text-base text-slate-900"
+              >
+                Name
+              </label>
               <input 
+                className="input rounded-full w-full focus:border-0 focus:outline-orange-600" 
                 name="name" 
-                type="text" 
-                className="input" 
                 placeholder="Name"
                 required 
-              />
-
-              <label className="label text-black">Image URL</label>
-              <input 
-                name="image" 
                 type="text" 
-                className="input" 
-                placeholder="Name"
               />
 
-              <label className="label text-black">Email</label>
+              <label 
+                className="font-semibold label text-base text-slate-900"
+              >
+                Image URL
+              </label>
               <input 
+                className="input rounded-full w-full focus:border-0 focus:outline-orange-600" 
+                name="image" 
+                placeholder="Image URL"
+                required
+                type="text" 
+              />
+
+              <label 
+                className="font-semibold label text-base text-slate-900"
+              >
+                Email
+              </label>
+              <input 
+                className="input rounded-full w-full focus:border-0 focus:outline-orange-600" 
                 name="email" 
-                type="email" 
-                className="input" 
                 placeholder="Email"
                 required 
+                type="email" 
               />
 
-              <label className="label text-black">Password</label>
+              <label 
+                className="font-semibold label text-base text-slate-900"
+              >
+                Password
+              </label>
               <input 
+                className="input rounded-full w-full focus:border-0 focus:outline-orange-600"
                 name="password" 
-                type="password" 
-                className="input"
                 placeholder="Password"
                 required 
+                type="password" 
               />
 
-              <button type="submit" className="btn bg-black mt-4 text-white">Login</button>
+              <button 
+                type="submit" 
+                className="bg-orange-600 btn mt-4 rounded-full text-white"
+              >
+                Login
+              </button>
             </fieldset>
           </form>
 
           <div className="flex px-6 items-center gap-2">
-            <div className="border grow"></div>
+            <div className="border border-gray-300 grow"></div>
             <span>Or</span>
-            <div className="border grow"></div>
+            <div className="border border-gray-300 grow"></div>
           </div>
 
-          <div className="py-6 flex justify-center">
+          <div className="flex justify-center py-6">
             <button
               onClick={handleGoogleLogin}
-              className="btn bg-white text-black border-[#e5e5e5]"
+              className="border border-gray-400 btn rounded-full text-slate-900"
             >
               <svg aria-label="Google logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="m0 0H512V512H0" fill="#fff"></path><path fill="#34a853" d="M153 292c30 82 118 95 171 60h62v48A192 192 0 0190 341"></path><path fill="#4285f4" d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57"></path><path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"></path><path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"></path></g></svg>
               Continue with Google

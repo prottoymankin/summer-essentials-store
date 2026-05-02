@@ -21,8 +21,8 @@ const LoginPage = () => {
       onSuccess: () => {
         router.refresh();
         router.replace("/");
-      }, onError: (error) => {
-        toast.error(error.message);
+      }, onError: (ctx) => {
+        toast.error(ctx.error.message);
       }
     });
   }

@@ -16,19 +16,19 @@ const SignUpPage = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    const { data, error } = await authClient.signUp.email({
+    await authClient.signUp.email({
       name,
       email,
       password,
       image
+    }, {
+      onSuccess: () => {
+        window.location.href("/");
+      },
+      onError: (ctx) => {
+        toast.error(ctx.error.message);
+      }
     });
-
-    if (!error) {
-      router.replace("/");
-      router.refresh();
-    } else {
-      toast.error(error.message);
-    }
   }
 
   const handleGoogleLogin = async () => {

@@ -25,6 +25,7 @@ const SignUpPage = () => {
 
     if (!error) {
       router.replace("/");
+      router.refresh();
     } else {
       toast.error(error.message);
     }

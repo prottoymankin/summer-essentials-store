@@ -1,6 +1,7 @@
 import Navbar from "@/components/shared/Navbar";
 import "./globals.css";
 import Footer from "@/components/shared/Footer";
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   title: "SunEssential",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <ToastContainer />
       </body>
     </html>
   );

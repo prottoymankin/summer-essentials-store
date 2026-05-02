@@ -2,6 +2,7 @@
 
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
+import { toast } from "react-toastify";
 
 const LoginPage = () => {
   const onSubmit = async (e) => {
@@ -14,6 +15,10 @@ const LoginPage = () => {
       email,
       password,
     });
+
+    if (error) {
+      toast.error(error)
+    }
   }
 
   const handleGoogleLogin = async () => {

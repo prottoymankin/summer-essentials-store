@@ -91,7 +91,10 @@ const Navbar = () => {
                 {
                     user && (
                         <div className="navbar-end space-x-2">
-                            <div className="relative h-10 w-10 rounded-full overflow-hidden">
+                            <Link 
+                                className="relative h-10 w-10 rounded-full overflow-hidden"
+                                href="/my-profile"
+                            >
                                 <Image 
                                     src={user?.image}
                                     alt={user?.name}
@@ -99,7 +102,7 @@ const Navbar = () => {
                                     fill
                                     className="object-cover"
                                 />
-                            </div>
+                            </Link>
 
                             <button 
                                 onClick={handleSignOut}

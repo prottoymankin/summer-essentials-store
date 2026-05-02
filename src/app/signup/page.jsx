@@ -2,12 +2,9 @@
 
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
 const SignUpPage = () => {
-  const router = useRouter();
-
   const onSubmit = async (e) => {
     e.preventDefault();
 

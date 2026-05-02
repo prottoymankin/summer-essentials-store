@@ -14,17 +14,17 @@ const LoginPage = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    const { data, error } = await authClient.signIn.email({
+    await authClient.signIn.email({
       email,
       password,
+    }, {
+      onSuccess: () => {
+        router.refresh();
+        router.replace("/");
+      }, onError: (error) => {
+        toast.error(error.message);
+      }
     });
-
-    if (!error) {
-      router.refresh();
-      router.replace("/");
-    } else {
-      toast.error(error.message);
-    }
   }
 
   const handleGoogleLogin = async () => {

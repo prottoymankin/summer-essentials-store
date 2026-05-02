@@ -17,10 +17,19 @@ const ProductDetailsPage = async ({ params }) => {
         <div className="w-1/2 space-y-4">
           <div>
             <h2 className="font-bold text-3xl">{selectedProduct.name}</h2>
-            <p>
-              <span className="font-semibold">Brand: </span>
-              <span>{selectedProduct.brand}</span>
-            </p>
+            
+            <div className="flex gap-4">
+              <p>
+                <span className="font-semibold">Brand: </span>
+                <span>{selectedProduct.brand}</span>
+              </p>
+
+              <div 
+                className="badge bg-amber-400 rounded-full text-sm text-slate-800"
+              >
+                {selectedProduct.category}
+              </div>
+            </div>
           </div>
 
           <p>⭐{selectedProduct.rating}</p>
@@ -45,7 +54,7 @@ const ProductDetailsPage = async ({ params }) => {
             }
           </div>
 
-          <p className="font-semibold text-3xl text-green-600">
+          <p className="font-semibold text-3xl text-orange-600">
             ${selectedProduct.price}
           </p>
         </div>

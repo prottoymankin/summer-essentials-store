@@ -21,10 +21,11 @@ const SignUpPage = () => {
       email,
       password,
       image,
+      autoSignIn: false
     });
 
     if (!error) {
-      router.push("/");
+      router.push("/login");
     } else {
       toast.error(error.message);
     }

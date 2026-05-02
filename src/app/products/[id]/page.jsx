@@ -9,13 +9,20 @@ const ProductDetailsPage = async ({ params }) => {
 
   return (
     <section className="max-w-7xl mx-auto my-10 text-neutral-800">
-      <div className="flex gap-6">
-        <div className="min-h-[60vh] relative w-1/2 rounded-2xl overflow-hidden">
-          <Image src={selectedProduct.image} alt={selectedProduct.name} fill className="object-cover w-full h-full" />
+      <div className="flex gap-6 flex-col lg:flex-row">
+        <div 
+          className="min-h-[60vh] relative w-full lg:w-1/2 rounded-2xl overflow-hidden"
+        >
+          <Image 
+            alt={selectedProduct.name} 
+            className="object-cover w-full h-full" 
+            fill 
+            src={selectedProduct.image} 
+          />
         </div>
 
-        <div className="w-1/2 space-y-4">
-          <div>
+        <div className="w-full lg:w-1/2 space-y-4">
+          <div className="space-y-2">
             <h2 className="font-bold text-3xl">{selectedProduct.name}</h2>
             
             <div className="flex gap-4">
@@ -25,7 +32,7 @@ const ProductDetailsPage = async ({ params }) => {
               </p>
 
               <div 
-                className="badge bg-amber-400 rounded-full text-sm text-slate-800"
+                className="badge bg-amber-400 font-semibold rounded-full text-sm text-slate-800"
               >
                 {selectedProduct.category}
               </div>

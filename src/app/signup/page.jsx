@@ -63,7 +63,7 @@ const SignUpPage = () => {
           >
             <fieldset className="fieldset">
               <label 
-                className="font-semibold label text-base text-slate-900"
+                className="font-semibold label text-base text-slate-800"
               >
                 Name
               </label>

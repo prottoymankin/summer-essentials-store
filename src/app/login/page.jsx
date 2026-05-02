@@ -26,7 +26,7 @@ const LoginPage = () => {
     <section 
       className="min-h-[80vh] flex flex-col items-center justify-center space-y-10"
     >
-      <header className="text-center text-slate-900 space-y-1">
+      <header className="text-center text-slate-800 space-y-1">
         <h2 className="font-bold text-3xl">
           👋 Welcome back to SunEssentials 👋
         </h2>

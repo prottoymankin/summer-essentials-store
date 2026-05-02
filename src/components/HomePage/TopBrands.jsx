@@ -12,7 +12,7 @@ const TopBrands = () => {
         <p className="max-w-lg mx-auto">Explore top brands that keep you cool, stylish, and protected all summer long.</p>
       </div>
 
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div 
           className="border border-gray-300 h-50 shadow-lg rounded-xl flex items-center justify-center transition duration-300 hover:-translate-y-2 bg-base-100"
         >

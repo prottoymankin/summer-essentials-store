@@ -22,7 +22,7 @@ const ProfileEditPage = () => {
 
   return (
     <section 
-      className="flex flex-col gap-6 items-center justify-center max-w-7xl mx-auto py-10 text-neutral-800"
+      className="flex flex-col gap-6 items-center justify-center max-w-7xl mx-auto py-10 text-slate-800"
     >
       <h1 className="text-3xl font-bold">Update your profile</h1>
 

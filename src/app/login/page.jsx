@@ -18,6 +18,7 @@ const LoginPage = () => {
 
     if (error) {
       toast.error(error)
+      console.log(error);
     }
   }
 

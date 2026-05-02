@@ -2,12 +2,9 @@
 
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
 const LoginPage = () => {
-  const router = useRouter();
-
   const onSubmit = async (e) => {
     e.preventDefault();
 
@@ -19,8 +16,7 @@ const LoginPage = () => {
       password,
     }, {
       onSuccess: () => {
-        router.refresh();
-        router.replace("/");
+        window.location.href = "/";
       }, onError: (ctx) => {
         toast.error(ctx.error.message);
       }

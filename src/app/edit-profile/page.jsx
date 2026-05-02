@@ -40,7 +40,7 @@ const ProfileEditPage = () => {
               Name
             </label>
             <input 
-              className="input rounded-full w-full"
+              className="input rounded-full w-full border-none focus:outline-primary"
               name="name"
               placeholder="Name"
               required
@@ -53,7 +53,7 @@ const ProfileEditPage = () => {
               Image URL
             </label>
             <input 
-              className="input rounded-full w-full"
+              className="input rounded-full w-full border-none focus:outline-primary"
               name="image"
               placeholder="Image URL"
               required

@@ -33,7 +33,7 @@ const Navbar = () => {
     )
 
     return (
-        <div className="shadow-sm">
+        <div className="shadow-sm animate__animated animate__fadeInDown">
             <div className="navbar bg-base-100 max-w-7xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">

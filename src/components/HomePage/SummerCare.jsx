@@ -17,9 +17,9 @@ const SummerCare = () => {
 
   return (
     <section className="space-y-6 mb-15">
-      <div className="text-neutral-800 text-center">
+      <div className="text-slate-800 text-center">
         <h2 className="font-bold text-3xl">Summer Care Tips</h2>
-        <p className="">Beat the heat with smart summer care. Stay hydrated, protect your skin, and keep yourself fresh all day long.</p>
+        <p className="max-w-lg mx-auto">Beat the heat with smart summer care. Stay hydrated, protect your skin, and keep yourself fresh all day long.</p>
       </div>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -27,7 +27,7 @@ const SummerCare = () => {
           tips.map((tip, index) => (
             <div
               key={index}
-              className="h-50 rounded-2xl shadow-lg transition duration-300 hover:-translate-y-2"
+              className="border border-gray-300 duration-300 h-50 rounded-2xl shadow-lg transition hover:-translate-y-2"
             >
               <div 
                 className="rounded-2xl flex flex-col h-full items-center text-center justify-center"

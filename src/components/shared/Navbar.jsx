@@ -53,11 +53,18 @@ const Navbar = () => {
                             src="/logo.png" 
                             alt="logo">
                         </Image>
-                        <a className="font-bold text-2xl">SunEssentials</a>
+                        <Link 
+                            className="bg-clip-text bg-linear-to-r from-amber-400 to-orange-600 font-bold text-transparent text-2xl"
+                            href="/"
+                        >
+                            SunEssentials
+                        </Link>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 font-medium text-neutral-700">
+                    <ul 
+                        className="font-medium menu menu-horizontal px-1 text-slate-800"
+                    >
                         {links}
                     </ul>
                 </div>
@@ -95,7 +102,7 @@ const Navbar = () => {
 
                             <button 
                                 onClick={handleSignOut}
-                                className="btn bg-amber-400 text-slate-900"
+                                className="btn bg-amber-400 rounded-full text-slate-900"
                             >
                                 <FaSignOutAlt />
                                 Sign out

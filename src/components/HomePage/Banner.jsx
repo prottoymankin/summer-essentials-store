@@ -8,17 +8,19 @@ import { FaArrowRight } from "react-icons/fa";
 const Banner = () => {
   return (
     <section 
-      className=" bg-linear-to-r from-[#FFF7CC] to-[#FFE8A3] min-h-[60vh] flex flex-col lg:flex-row gap-5 items-center justify-around my-15 p-6 rounded-2xl text-neutral-800"
+      className="bg-linear-to-r from-amber-200 to-orange-300 min-h-[60vh] flex flex-col lg:flex-row gap-5 items-center justify-around my-15 p-6 rounded-2xl text-slate-800"
     >
       <div className="flex flex-col gap-6 items-center lg:items-start">
         <div className="space-y-2 text-center lg:text-left">
           <h1 className="font-semibold text-5xl">SUMMER SALE ☀️</h1>
-          <h2 className="font-medium text-2xl">Up to 50% OFF on Summer Essentials🔥</h2>
+          <h2 className="font-medium text-2xl">
+            Up to 50% OFF on Summer Essentials🔥
+          </h2>
         </div>
 
         <Link 
           href="/products" 
-          className="btn  bg-orange-600 text-white"
+          className="bg-orange-600 border-none btn rounded-full text-white shadow-none"
         >
           Shop now
           <FaArrowRight />

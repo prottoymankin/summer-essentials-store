@@ -64,5 +64,38 @@
     "description": "Keeps your drinks cold for hours in summer heat.",
     "image": "https://www.scoria.ca/cdn/shop/files/scoria-ALL-2C-multiple-WATER-BOTTLE-stainless-steel-water-bottle-best-cold-hot-bottle-sustainable.jpg?v=1689388450&width=2768",
     "category": "Essentials"
+  },
+  {
+    "id": 7,
+    "name": "Ray-Ban Justin Classic",
+    "brand": "Ray-Ban",
+    "price": 140,
+    "rating": 4.8,
+    "stock": 12,
+    "description": "Inspired by the iconic Wayfarer, these sunglasses offer a bold rubberized finish for the ultimate summer look.",
+    "image": "https://cdn11.bigcommerce.com/s-zut1msomd6/images/stencil/500x659/products/20664/194923/adult-ray-ban-justin-RB4165-622-6Q-black-red-mirror__58988.1621363972.jpg?c=1",
+    "category": "Accessories"
+  },
+  {
+    "id": 8,
+    "name": "Zara Linen Blend Shirt",
+    "brand": "Zara",
+    "price": 45,
+    "rating": 4.6,
+    "stock": 20,
+    "description": "Breathable linen-blend fabric with a relaxed fit, perfect for keeping cool during beach parties.",
+    "image": "https://static.zara.net/assets/public/7fd1/d71d/cbe14dc49f2e/673fdc198b1c/09959732405-e1/09959732405-e1.jpg?ts=1768401996434",
+    "category": "Clothing"
+  },
+  {
+    "id": 9,
+    "name": "Nivea Sun Invisible Spray",
+    "brand": "Nivea",
+    "price": 22,
+    "rating": 4.9,
+    "stock": 35,
+    "description": "Non-greasy, transparent spray providing immediate high UVA/UVB protection without white marks.",
+    "image": "https://theukbrands.com/wp-content/uploads/2024/06/IMG-20240612-WA0000.webp",
+    "category": "Skincare"
   }
 ]

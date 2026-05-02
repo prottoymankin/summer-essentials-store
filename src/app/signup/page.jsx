@@ -24,7 +24,7 @@ const SignUpPage = () => {
     });
 
     if (!error) {
-      router.push("/");
+      router.replace("/");
     } else {
       toast.error(error.message);
     }
@@ -121,7 +121,7 @@ const SignUpPage = () => {
                 type="submit" 
                 className="bg-orange-600 btn mt-4 rounded-full text-white"
               >
-                Login
+                Sign up
               </button>
             </fieldset>
           </form>

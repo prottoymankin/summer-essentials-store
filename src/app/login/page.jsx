@@ -20,8 +20,8 @@ const LoginPage = () => {
     });
 
     if (!error) {
-      router.replace("/");
       router.refresh();
+      router.replace("/");
     } else {
       toast.error(error.message);
     }

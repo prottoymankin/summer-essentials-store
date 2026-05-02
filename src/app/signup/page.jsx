@@ -23,7 +23,7 @@ const SignUpPage = () => {
       image
     }, {
       onSuccess: () => {
-        window.location.href("/");
+        window.location.href="/";
       },
       onError: (ctx) => {
         toast.error(ctx.error.message);
